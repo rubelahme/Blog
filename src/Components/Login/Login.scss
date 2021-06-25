@@ -1,0 +1,48 @@
+.Google {
+  color: blueviolet;
+  background-image: linear-gradient(90deg, #000b34, #0073a0);
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.GoogleButton {
+  background-image: linear-gradient(90deg, #000b34, #0073a0);
+  padding: 5px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  color: whitesmoke;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 3px;
+}
+.GoogleButton:hover {
+  background-image: linear-gradient(90deg, #0073a0, #000b34);
+}
+.submit-1 {
+  background-image: linear-gradient(90deg, #000b34, #0073a0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+}
+
+.submit-1:hover {
+  background-image: linear-gradient(90deg, #0073a0, #000b34);
+}
+.Google:hover {
+  color: whitesmoke;
+}
+.login-1 {
+  text-align: left;
+  color: whitesmoke;
+  padding-top: 7px;
+}
+.login-2 {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.required-1 {
+  background-image: linear-gradient(90deg, #000b34, #0073a0);
+  height: 100vh;
+}

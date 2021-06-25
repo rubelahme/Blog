@@ -1,0 +1,29 @@
+.menu-1 {
+  font-size: 25px;
+}
+.menu-2 {
+  color: aquamarine;
+}
+.menu-3 {
+  color: aquamarine;
+}
+.menu-4 {
+  font-size: 19px;
+}
+.menu-4:hover {
+  border-bottom: 2px solid whitesmoke;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .menu-2 {
+    animation: App-logo-spin infinite 3s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

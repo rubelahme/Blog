@@ -1,0 +1,24 @@
+.img-1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  margin-bottom: 30px;
+}
+.book-1 {
+  border: 1px solid #333;
+  color: whitesmoke;
+  background-image: linear-gradient(360deg, #000b34, #0073a0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.book-4 {
+  padding-top: 5px;
+  color: whitesmoke;
+  border: 1px solid whitesmoke;
+  background-image: linear-gradient(90deg, #7287d3, #0073a0);
+}
+.book-4:hover {
+  background-image: linear-gradient(90deg, #0073a0, #7287d3);
+}
+.Author {
+  font-size: 13px;
+}
