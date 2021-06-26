@@ -21,7 +21,7 @@ const AddBook = () => {
       title: data.title,
       img: imgs,
     };
-    fetch("http://localhost:5000/users", {
+    fetch("https://rocky-ocean-95778.herokuapp.com/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(eventData),

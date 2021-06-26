@@ -16,7 +16,7 @@ const Dashboard = () => {
   const [user] = useContext(createProvider);
   const [item, setItem] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/admin?email" + user.email)
+    fetch("https://rocky-ocean-95778.herokuapp.com/admin?email" + user.email)
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, [user.email]);

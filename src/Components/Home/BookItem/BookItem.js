@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+
 import "./BookItem.scss";
 const BookItem = (props) => {
   const { title, img, Amount, _id } = props.data;

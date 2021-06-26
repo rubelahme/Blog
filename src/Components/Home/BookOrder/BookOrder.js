@@ -7,7 +7,7 @@ const BookOrder = () => {
   const [user] = useContext(createProvider);
   const [Add, setAdd] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/users/" + id)
+    fetch("https://rocky-ocean-95778.herokuapp.com/users/" + id)
       .then((res) => res.json())
       .then((result) => {
         setAdd(result);
@@ -24,7 +24,7 @@ const BookOrder = () => {
   };
 
   const OrderBook = (id) => {
-    fetch("http://localhost:5000/order", {
+    fetch("https://rocky-ocean-95778.herokuapp.com/order", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(id),

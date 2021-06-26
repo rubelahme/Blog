@@ -12,7 +12,7 @@ const AdminAdd = () => {
     const Data = {
       Email: data.email,
     };
-    fetch("http://localhost:5000/admin", {
+    fetch("https://rocky-ocean-95778.herokuapp.com/admin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(Data),

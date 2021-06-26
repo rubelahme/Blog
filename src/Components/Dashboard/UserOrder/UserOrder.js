@@ -5,7 +5,7 @@ const UserOrder = () => {
   const [item, setItem] = useState([]);
   const [user] = useContext(createProvider);
   useEffect(() => {
-    fetch(`http://localhost:5000/order?email=${user.email}`)
+    fetch(`https://rocky-ocean-95778.herokuapp.com/order?email=${user.email}`)
       .then((res) => res.json())
       .then((result) => {
         setItem(result);

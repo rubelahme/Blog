@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import "./BookList.scss";
 import BookItem from "../BookItem/BookItem";
-
+import Fade from "react-reveal/Fade";
 const BookList = () => {
   const [item, setItem] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://rocky-ocean-95778.herokuapp.com/users")
       .then((res) => res.json())
       .then((data) => {
         setItem(data);
       });
   }, []);
   return (
-    <div>
+    <Fade bottom>
       <div className="container py-5">
         <div className="row">
           {item.map((pd) => (
@@ -20,7 +20,7 @@ const BookList = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Fade>
   );
 };
 

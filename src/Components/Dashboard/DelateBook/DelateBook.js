@@ -4,13 +4,13 @@ import "./DelateBook.scss";
 const DelateBook = () => {
   const [item, setItem] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://rocky-ocean-95778.herokuapp.com/users")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, []);
 
   const handelDelete = (id) => {
-    fetch("http://localhost:5000/delete/" + id, {
+    fetch("https://rocky-ocean-95778.herokuapp.com/delete/" + id, {
       method: "DELETE",
     })
       .then((res) => res.json())

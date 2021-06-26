@@ -164,7 +164,7 @@ const Login = () => {
                       <br />
                       <button className="w-100 p-2 submit-1" type="submit">
                         {" "}
-                        Sing Up
+                        Login
                       </button>
                     </form>
                   ) : (
@@ -207,7 +207,7 @@ const Login = () => {
                       <br />
                       <button className="w-100 p-2 submit-1" type="submit">
                         {" "}
-                        Login Created
+                        Register
                       </button>
                     </form>
                   )}
@@ -219,11 +219,7 @@ const Login = () => {
                       <span>You have an Account.</span>
                     )}{" "}
                     <span onClick={() => newUsers(!users)} className="login-2">
-                      {users ? (
-                        <span>Login Created</span>
-                      ) : (
-                        <span>Sing Up?</span>
-                      )}
+                      {users ? <span>Register?</span> : <span>Login?</span>}
                     </span>{" "}
                   </p>
                 </div>
